@@ -32,13 +32,13 @@ function todoApp() {
   }
 
   // Update
-  function updateTodo(todo) {
+  function updateTodo(id, todo) {
     const result = todoList.find(function (item) {
-      return item.id === todo.id;
+      return item.id === id;
     });
 
     if (!result) {
-      console.log("no todo with this id is present" + todo.id);
+      console.log("no todo with this id is present" + id);
       return;
     }
 

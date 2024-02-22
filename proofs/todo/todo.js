@@ -39,7 +39,9 @@ function todoApp() {
       return `No todo with index ${id} found`;
     }
 
-    Object.assign(result, todo); // merge the todo object with the result object
+    // merge the todo object with the result object
+    // Object.assign(result, todo);
+    const updateData = { ...result, ...todo };
 
     const index = todoList.indexOf(result);
     todoList[index] = result;

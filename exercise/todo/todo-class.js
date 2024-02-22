@@ -1,7 +1,6 @@
 class TodoApp {
   constructor() {
     this.todoList = []; //state
-    this.todolistDiv = doucemnt.querySelector(".todlisi");
   }
 
   createTodo(todo) {

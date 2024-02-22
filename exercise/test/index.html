@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background: green;
+        transition: transform 0.3s;
+      }
+
+      header.go-up {
+        transform: translateY(-100%);
+      }
+
+      header.come-down {
+        transform: none;
+        position: fixed;
+      }
+
+      header.is-sticky {
+        position: fixed;
+      }
+
+      section {
+        background-color: gray;
+        margin-bottom: 40px;
+      }
+      section.blue {
+        background-color: #2d33cd;
+      }
+      section.in-viewport {
+        background-color: #f59292;
+      }
+      .info-section {
+        min-height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <div class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://google.com">About</a></li>
+            <li><a href="https://google.com">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <section class="info-section">
+        <h1>Heading 1</h1>
+        <div class="row first">
+          <div class="col">Heading 1 col 1</div>
+          <div class="col">Heading 1 col 2</div>
+          <div class="col">Heading 1 col 3</div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <h1>Heading 2</h1>
+        <div class="row">
+          <div class="col">Heading 2 col 1</div>
+          <div class="col">Heading 2 col 2</div>
+          <div class="col">Heading 2 col 3</div>
+        </div>
+      </section>
+      <section class="info-section">
+        <h1>Heading 3</h1>
+        <div class="row">
+          <div class="col">Heading 2 col 1</div>
+          <div class="col">Heading 2 col 2</div>
+          <div class="col">Heading 2 col 3</div>
+        </div>
+      </section>
+      <section class="info-section">
+        <h1>Heading 4</h1>
+        <div class="row">
+          <div class="col">Heading 2 col 1</div>
+          <div class="col">Heading 2 col 2</div>
+          <div class="col">Heading 2 col 3</div>
+        </div>
+      </section>
+      <section class="info-section">
+        <h1>Heading 5</h1>
+        <div class="row">
+          <div class="col">Heading 2 col 1</div>
+          <div class="col">Heading 2 col 2</div>
+          <div class="col">Heading 2 col 3</div>
+        </div>
+      </section>
+      <div class="accordion">
+        <ul>
+          <li>
+            <a href="#" class="opener">opener 1</a>
+            <div class="slide">
+              <p>Slide 1</p>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="opener">opener 2</a>
+            <div class="slide">
+              <p>Slide 2</p>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="opener">opener 3</a>
+            <div class="slide">
+              <p>Slide 3</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -6,8 +6,9 @@
 // }
 
 class TodoApp {
-  constructor() {
+  constructor(todo) {
     this.todoList = [];
+    this.title = todo;
   }
 
   // create method
@@ -36,7 +37,7 @@ class TodoApp {
     //   return todo.title;
     // });
     const result = this.todoList.map((item) => item.title);
-
+    console.log("App Title:" + this.title);
     console.log(`Display todo list: \n \n ${result}`);
   };
 
